@@ -19,3 +19,4 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 colorscheme torte
+autocmd vimenter * NERDTree
