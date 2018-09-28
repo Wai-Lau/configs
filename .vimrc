@@ -19,4 +19,7 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 colorscheme torte
-autocmd vimenter * NERDTree
+
+let NERDTreeShowHidden=1
+let g:NERDTreeWinPos = "left"
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
