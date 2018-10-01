@@ -14,10 +14,13 @@ export ZLE_RPROMPT_INDENT=2
 alias dos2unix='find . -type f -print0 | xargs -0 -n 1 -P 4 dos2unix'
 setopt extendedglob
 c() print -rC$[COLUMNS/(($1)+2)] -- "${(M)@[2,-1]##?(#c0,$[$1])}"
+rmd() {
+  docker rm -f $(docker ps -a -q)
+}
 alias lsc='c 15 $(ls -a)'
 alias ls='ls --color=auto'
 alias pip='pip3'
 alias python='python3'
 alias speak='cmd speak'
 alias docker-compose='dmd docker-compose'
-
+alias docker-machine='cmd docker-machine'
