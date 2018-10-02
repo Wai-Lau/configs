@@ -34,6 +34,8 @@ filetype plugin indent on    " required
 
 set number
 set nowrap
+set fillchars=""
+
 call plug#begin('~/.vim/plugged')
 
 " Plugin outside ~/.vim/plugged with post-update hook
