@@ -25,4 +25,3 @@ alias speak='cmd speak'
 alias docker-compose='dmd docker-compose'
 alias docker-machine='cmd docker-machine'
 
-cd ~
