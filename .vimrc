@@ -92,7 +92,7 @@ set shiftwidth  =2
 set expandtab
 
 highlight BadWhitespace ctermfg=16 ctermbg=253 guifg=#000000 guibg=#F80000
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+au BufRead,BufNewFile *.rb,*.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " for use with YCM
 let g:ycm_server_python_interpreter = '/usr/bin/python'
