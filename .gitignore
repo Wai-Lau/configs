@@ -6,5 +6,5 @@
 !.zshrc
 !.tmux.conf
 !.config/
-!.config/*
-!.config/**/*
+!.config/*.json
+!.config/**/*.json

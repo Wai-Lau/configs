@@ -1,17 +1,6 @@
 {
 	"segments": {
 		"left": [
-      {
-				"function": "powerline.segments.common.vcs.branch",
-        "name": "vcs",
-        "args": {
-          "status_colors": true
-        }
-			},
-      {
-				"function": "powerline.segments.common.vcs.stash",
-        "name": "vcs_stash"
-			}
 		],
 		"right": [
       {
