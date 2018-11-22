@@ -1,0 +1,36 @@
+{
+	"segments": {
+		"left": [
+      {
+				"function": "powerline.segments.common.vcs.branch",
+        "name": "vcs",
+        "args": {
+          "status_colors": true
+        }
+			},
+      {
+				"function": "powerline.segments.common.vcs.stash",
+        "name": "vcs_stash"
+			}
+		],
+		"right": [
+      {
+				"function": "powerline.segments.common.time.date",
+				"name": "time",
+				"args": {
+					"format": "%H:%M",
+					"istime": true
+				}
+			},
+			{
+				"function": "powerline.segments.common.net.hostname"
+			},
+      {
+				"function": "powerline.segments.common.bat.battery",
+				"name": "battery",
+				"args": {
+				}
+			}
+		]
+	}
+}
