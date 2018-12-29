@@ -1,10 +1,10 @@
 {
-	"segments": {
-		"left": [
-			{
-				"function": "powerline.segments.shell.cwd",
-				"priority": 10
-			},
+  "segments": {
+    "left": [
+      {
+        "function": "powerline.segments.shell.cwd",
+        "priority": 10
+      },
       {
         "function": "powerline.segments.common.vcs.branch",
         "priority": 50,
@@ -15,12 +15,12 @@
       {
         "function": "powerline.segments.common.vcs.stash"
       }
-		],
-		"right": [
-			{
-				"function": "powerline.segments.shell.last_pipe_status",
-				"priority": 10
-			}
-		]
-	}
+    ],
+    "right": [
+      {
+        "function": "powerline.segments.shell.last_pipe_status",
+        "priority": 10
+      }
+    ]
+  }
 }
