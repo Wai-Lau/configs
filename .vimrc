@@ -96,6 +96,7 @@ au BufRead,BufNewFile *.rb,*.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " for use with YCM
 let g:ycm_server_python_interpreter = '/usr/bin/python'
+let g:syntastic_python_checkers=['flake8']
 
 :Helptags
 
@@ -105,3 +106,6 @@ if bufwinnr(1)
   map <S-h> 10<c-w><
   map <S-l> 10<c-w>>
 endif
+
+noremap ; :
+noremap : ;
