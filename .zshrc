@@ -24,8 +24,7 @@ alias ls='ls --color=auto'
 alias pip='pip3'
 alias python='python3'
 alias speak='cmd speak'
-alias wocker-compose='dmd docker-compose'
-alias docker-compose='/usr/local/bin/docker-compose'
+alias docker-compose='dmd docker-compose'
 alias docker-machine='cmd docker-machine'
 
 export NVM_DIR="/home/wai/.nvm"
