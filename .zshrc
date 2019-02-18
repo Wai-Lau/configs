@@ -1,7 +1,7 @@
 export TERM="xterm-256color"
 bindkey -e
 export DOCKER_HOST=tcp://192.168.99.100:2376
-export DOCKER_CERT_PATH=/c/Users/wailu/.docker/machine/certs
+export DOCKER_CERT_PATH=/mnt/c/Users/wailu/.docker/machine/certs
 export DOCKER_TLS_VERIFY=1
 export PYSPARK_DRIVER_PYTHON=python3.5
 export PYSPARK_PYTHON=python3.5
@@ -26,6 +26,7 @@ alias python='python3'
 alias speak='cmd speak'
 alias docker-compose='dmd docker-compose'
 alias docker-machine='cmd docker-machine'
+alias dir="/c/Windows/explorer.exe ."
 
 export NVM_DIR="/home/wai/.nvm"
 nvm() {
