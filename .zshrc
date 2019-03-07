@@ -26,7 +26,7 @@ alias python='python3'
 alias speak='cmd speak'
 alias docker-compose='dmd docker-compose'
 alias docker-machine='cmd docker-machine'
-alias dir="/c/Windows/explorer.exe ."
+alias dir="/mnt/c/Windows/explorer.exe ."
 
 export NVM_DIR="/home/wai/.nvm"
 nvm() {
