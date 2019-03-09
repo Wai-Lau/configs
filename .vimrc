@@ -101,12 +101,10 @@ let g:syntastic_python_checkers=['flake8']
 
 :Helptags
 
-if bufwinnr(1)
-  map <S-j> 10<C-W>+
-  map <S-k> 10<C-W>-
-  map <S-h> 10<c-w><
-  map <S-l> 10<c-w>>
-endif
+nnoremap - 10<C-W>+
+nnoremap = 10<C-W>-
+nnoremap [ 10<c-w><
+nnoremap ] 10<c-w>>
 
 noremap ; :
 noremap : ;
