@@ -101,13 +101,17 @@ let g:syntastic_python_checkers=['flake8']
 
 :Helptags
 
-nnoremap - 10<C-W>+
-nnoremap = 10<C-W>-
-nnoremap [ 10<c-w><
-nnoremap ] 10<c-w>>
+nnoremap + 10<C-W>+
+nnoremap _ 10<C-W>-
+nnoremap < 10<c-w><
+nnoremap > 10<c-w>>
 
 noremap ; :
 noremap : ;
+
+inoremap jk <Esc>
+onoremap jk <Esc>
+vnoremap jk <Esc>
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
@@ -117,3 +121,9 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven ctermbg=0
 let g:fzf_action = {
   \ 'ctrl-s': 'split',
   \ 'ctrl-t': 'vsplit' }
+
+python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
+" autocmd VimEnter,VimLeave * silent !tmux set status off
+
