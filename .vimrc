@@ -110,8 +110,6 @@ noremap ; :
 noremap : ;
 
 inoremap jk <Esc>
-onoremap jk <Esc>
-vnoremap jk <Esc>
 
 let g:indent_guides_enable_on_vim_startup = 1
 let g:indent_guides_auto_colors = 0
@@ -126,4 +124,5 @@ python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
 " autocmd VimEnter,VimLeave * silent !tmux set status off
-
+autocmd VimEnter * if &filetype !=# 'gitcommit' | NERDTree | endif
+let g:NERDTreeWinSize=22
