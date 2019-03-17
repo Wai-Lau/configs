@@ -4,7 +4,8 @@
 		"hostname":         { "fg": "brightyellow", "bg": "mediumorange", "attrs": [] },
 		"environment":      { "fg": "white", "bg": "darkestgreen", "attrs": [] },
 		"mode":             { "fg": "darkestgreen", "bg": "brightgreen", "attrs": ["bold"] },
-		"attached_clients": { "fg": "white", "bg": "darkestgreen", "attrs": [] }
+		"attached_clients": { "fg": "white", "bg": "darkestgreen", "attrs": [] },
+		"time":             { "fg": "gray3", "bg": "gray10", "attrs": ["bold"] }
 	},
 	"mode_translations": {
 		"vicmd": {

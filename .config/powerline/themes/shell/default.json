@@ -2,28 +2,6 @@
   "segments": {
     "left": [
       {
-        "function": "powerline.segments.shell.cwd",
-        "priority": 10
-      },
-      {
-        "function": "powerline.segments.common.vcs.branch",
-        "priority": 50,
-        "args": {
-          "status_colors": true
-        }
-      },
-      {
-        "function": "powerline.segments.common.vcs.stash"
-      }
-    ],
-    "right": [
-      {
-				"function": "powerline.segments.common.bat.battery",
-				"name": "battery",
-				"args": {
-				}
-			},
-      {
 				"function": "powerline.segments.common.time.date",
 				"name": "time",
 				"args": {
@@ -31,9 +9,12 @@
 					"istime": true
 				}
 			},
-			{
-				"function": "powerline.segments.common.net.hostname"
-			},
+      {
+        "function": "powerline.segments.shell.cwd",
+        "priority": 10
+      }
+    ],
+    "right": [
       {
         "function": "powerline.segments.shell.last_pipe_status",
         "priority": 10
