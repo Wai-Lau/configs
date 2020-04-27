@@ -48,6 +48,4 @@ export PATH="/usr/local/sbin:$PATH"
 export LDFLAGS="-L/usr/local/opt/openssl@1.1/lib"
 export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 export PKG_CONFIG_PATH="PKG_CONFIG_PATH:/usr/local/opt/openssl@1.1/lib/pkgconfig"
-export DD_API_KEY="a88a256bc75babc118e8e62583eda753"
-export DD_APPLICATION_KEY="c41f9015129d74057402960888a9da6ac3a35f73"
 
