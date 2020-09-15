@@ -15,6 +15,8 @@ alias consumer='dev cd elasticshop'
 alias client='dev cd elasticshop && cd gems/elasticsearch-shopify-client'
 alias searchbud='dev cd cloudbud && dev cd cloudbud && cd buddies/searchbuddy'
 alias vim!='sudo vim'
+alias kk='kctx'
+
 v () {
   dev cd $* && vim
 }
@@ -22,12 +24,10 @@ f () {
   dev cd $*  && ls
 }
 
-alias central='k config use-context es-tier1-us-central1-2'
-alias east='k config use-context es-tier1-us-east1-2'
-alias snapfind='k get pods -n es7 | grep snapshot | awk '\''{print $1}'\'''
-alias snap='k exec -it -n es7 $(snapfind) -- sh --login'
-alias snapcent='central && snap'
-alias snapeast='east && snap'
+alias snapfind='k get pods | grep snapshot | awk '\''{print $1}'\'''
+alias snap='k exec -it $(snapfind) -- sh --login'
+alias searchbuddyfind='k get -n cloudbuddies pods | grep searchbuddy | awk '\''{print $1}'\'''
+alias sblog='k logs -f $(searchbuddyfind) -n cloudbuddies'
 
 export XDG_CONFIG_HOME=~/.config
 . /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
