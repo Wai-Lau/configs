@@ -37,7 +37,7 @@ alias searchbuddyfind='k get -n cloudbuddies pods | grep searchbuddy | awk '\''{
 alias sblog='k logs -f $(searchbuddyfind) -n cloudbuddies'
 
 export XDG_CONFIG_HOME=~/.config
-. /usr/local/lib/python3.7/site-packages/powerline/bindings/zsh/powerline.zsh
+. /Users/wai/Library/Python/3.9/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 export EDITOR=/usr/local/bin/vim
 alias k=kubectl
 alias g=git
