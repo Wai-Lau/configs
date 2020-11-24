@@ -16,9 +16,10 @@ alias client='dev cd elasticshop && cd gems/elasticsearch-shopify-client'
 alias searchbud='dev cd cloudbud && dev cd cloudbud && cd buddies/searchbuddy'
 alias vim!='sudo vim'
 alias kk='kctx'
+alias colocon='vim ~/.vim/bundle/vim-colorschemes/colors'
+alias alacon='vim ~/.config/alacritty/alacritty.yml'
 alias kc='kubectl config current-context'
 alias reindex='bundle exec rake elasticsearch:update_test_mappings && bundle exec rake elasticsearch:reindex'
-
 v () {
   if [[ $# -eq 0 ]]
   then
