@@ -6,20 +6,22 @@ fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 eval "$(shadowenv init zsh)"
+
 export PATH=/usr/local/bin:$PATH
-export SKIP_RAILGUN_CHECK=1
+
 alias pip='pip3'
 alias python='python3'
 alias tags='ctags -R --exclude=.git --exclude=node_modules --exclude=.dev -o'
 alias consumer='dev cd elasticshop'
 alias client='dev cd elasticshop && cd gems/elasticsearch-shopify-client'
-alias searchbud='dev cd cloudbud && dev cd cloudbud && cd buddies/searchbuddy'
+alias buddy='dev cd cloudbud && cd buddies'
 alias vim!='sudo vim'
 alias kk='kctx'
+alias kc='kubectl config current-context'
+
 alias colocon='vim ~/.vim/bundle/vim-colorschemes/colors'
 alias alacon='vim ~/.config/alacritty/alacritty.yml'
-alias kc='kubectl config current-context'
-alias reindex='bundle exec rake elasticsearch:update_test_mappings && bundle exec rake elasticsearch:reindex'
+
 v () {
   if [[ $# -eq 0 ]]
   then
@@ -28,6 +30,7 @@ v () {
     dev cd $* && vim
   fi
 }
+
 f () {
   dev cd $*  && ls
 }
