@@ -43,6 +43,7 @@ alias sblog='k logs -f $(searchbuddyfind) -n cloudbuddies'
 export XDG_CONFIG_HOME=~/.config
 . /Users/wai/Library/Python/3.9/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 export EDITOR=/usr/local/bin/vim
+export SKIP_RAILGUN_CHECK=1
 alias k=kubectl
 alias g=git
 autoload -U compinit && compinit
