@@ -12,8 +12,6 @@ export PATH=/usr/local/bin:$PATH
 alias pip='pip3'
 alias python='python3'
 alias tags='ctags -R --exclude=.git --exclude=node_modules --exclude=.dev --exclude=app/assets/javascripts -o'
-alias consumer='dev cd elasticshop'
-alias client='dev cd elasticshop && cd gems/elasticsearch-shopify-client'
 alias buddy='dev cd cloudbud && cd buddies'
 alias vim!='sudo vim'
 alias kk='kctx'
